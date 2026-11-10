@@ -13,7 +13,7 @@ Democritus University of Thrace (2023).
 
 ## Logistic map: bifurcations and Lyapunov exponent
 
-$$x_{n+1} = r\,x_n(1 - x_n)$$
+$$x_{n+1} = r x_n(1 - x_n)$$
 
 The map is iterated for 10,000 values of $r \in [1, 4]$. After discarding the transient, the iterates
 form the **bifurcation diagram**, and the average of $\log|r(1 - 2x_n)|$ along the orbit gives the
@@ -58,6 +58,12 @@ Integrated with the explicit Euler method from several initial conditions; all t
 onto the same chaotic attractor (x–y projection shown).
 
 ![Rössler attractor](figures/rossler.png)
+
+## Nonlinear time-series analysis
+
+The [`time-series-analysis`](time-series-analysis/) folder goes the other way: starting from a
+measured scalar time series, it reconstructs the attractor by delay embedding and estimates its
+correlation dimension, largest Lyapunov exponent and entropy with TISEAN.
 
 ## Run
 
